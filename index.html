@@ -8,42 +8,42 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
   </head>
-  <body>
+  <body onload="load()">
     <div class="alignPage">
       <header class="grey flex">
-        <h1>Dojonary</h1>
-        <input type="text" placeholder="search">
-        <button>Login</button>
+        <h1 class="pad">Dojonary</h1>
+        <input type="text" placeholder="search" class="border"/>
+        <button id="logInOutButton" onclick="logIn()">Login</button>
       </header>
       <div class="container">
         <div id="left">
           <div class="definition border flex">
             <div class="defLeft">
-              <h1>Ninja</h1>
+              <h1>ninja</h1>
               <p>noun</p>
               <p>Plural: ninjas</p>
-              <button>13 Likes</button>
+              <button class="likeButton">13 Likes</button>
             </div>
             <div class="defRight">
-              <p>A practitioner skilled in the Japanese art of Ninjutsu</p>
+              <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
             </div>
           </div>
           <div class="definition border flex">
             <div class="defLeft">
-              <h1>Ninja</h1>
+              <h1>ninja</h1>
               <p>noun</p>
               <p>Plural: ninjas</p>
-              <button>37 Likes</button>
+              <button class="likeButton">37 Likes</button>
             </div>
             <div class="defRight">
-              <p>A programer who breaks down problems with zen-like focus</p>
+              <p>A <a href="#">programer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
             </div>
           </div>
         </div>
         <div id="right">
           <div id="addDefBox" class="border">
-            <h1>Dojonary is defined by YOU</h1>
-            <button>Add definition</button>
+            <p>Dojonary is defined by <strong>YOU</strong></p>
+            <button class="addDefButton" onclick="disappear()">Add definition</button>
           </div>
         </div>
       </div>
