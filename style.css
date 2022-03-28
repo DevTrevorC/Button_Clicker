@@ -4,6 +4,16 @@
     justify-content: space-between;
 }
 
+.alignPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.border {
+    border: black 3px solid;
+}
+
 .yellow {
     background-color: rgb(255, 217, 102);
 }
@@ -20,26 +30,67 @@
     background-color: rgb(150, 195, 125);
 }
 
-header {
-
+.center{
+    display: flex;
+    justify-content: center;
 }
 
-#container {
+header {
+    width: 1500px;
+    height: 5em;
+}
 
+.container {
+display: flex;
+width: 1500px;
+}
+
+.container >* {
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 #left {
-
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .definition {
+    width: 40em;
+    height:;
+    margin: 1em;
+}
 
+.defLeft {
+    flex: 1;
+}
+
+.defRight {
+    flex: 2;
 }
 
 #right {
-
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1em;
 }
 
 #addDefBox {
-    
+}
+
+.likeButton {
+
+}
+
+.addDefButton {
+
+}
+
+#logInOutButton {
+
 }
